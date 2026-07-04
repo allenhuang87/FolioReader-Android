@@ -8,7 +8,6 @@ buildscript {
         gradlePluginPortal()
         mavenCentral()
         maven { url 'https://jitpack.io' } // 添加此行
-        maven { url "https://repo.grails.org/grails/core/" }
     }
 
     dependencies {
@@ -36,7 +35,7 @@ allprojects {
         google()
         jcenter()
         // Add this fallback mirror
-        maven { url "https://repo.grails.org/grails/core/" }
+        maven { url 'https://jitpack.io' } // 添加此行
     }
 }
 
