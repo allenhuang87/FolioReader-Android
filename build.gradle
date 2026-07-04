@@ -17,10 +17,9 @@ buildscript {
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
 
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+        //classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
-        implementation 'com.github.codetoart:r2-shared-kotlin:1.0.4-1'
     }
 }
 
@@ -35,9 +34,10 @@ allprojects {
     repositories {
         mavenLocal()
         google()
-        jcenter()
+        mavenCentral()
         // Add this fallback mirror
         maven { url "https://repo.grails.org/grails/core/" }
+        maven { url 'https://jitpack.io' }
     }
 }
 
