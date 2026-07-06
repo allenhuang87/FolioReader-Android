@@ -116,7 +116,7 @@ dependencies {
     }
      // NanoHttpd - 使用包含 router 模块的版本，替代 r2-streamer 的不可用传递依赖
     implementation 'org.nanohttpd:nanohttpd:2.3.1'
-    implementation 'com.github.nanohttpd:nanohttpd:2.3.1'
+    implementation 'org.nanohttpd:nanohttpd-nanolets:2.3.1'
     
     // Only ReflectionUtils in Spring framework is used
     implementation 'org.springframework:spring-core:4.3.19.RELEASE'
