@@ -110,8 +110,8 @@ dependencies {
     }
     api("com.github.codetoart:r2-streamer-kotlin:$versions.r2StreamerKotlin") {
         exclude group: "org.slf4j", module: "slf4j-api"
-        exclude group: "com.github.NanoHttpd", module: "nanohttpd"
-        exclude group: "com.github.NanoHttpd", module: "nanohttpd-nanolets"
+        exclude group: "com.github.NanoHttpd.nanohttpd", module: "nanohttpd"
+        exclude group: "com.github.NanoHttpd.nanohttpd", module: "nanohttpd-nanolets"
         changing = true
     }
     // NanoHttpd - 直接引用可用版本，替代 r2-streamer 的不可用传递依赖
